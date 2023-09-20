@@ -1,0 +1,75 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+h2,
+h3{
+	color: white;
+	margin: 20px 0;
+}
+
+header {
+	height: 40px;
+	text-align: center;
+	padding: 10px;
+}
+
+.main-wrapper {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: blueviolet;
+}
+
+.container {
+	width: 600px;
+	display: flex;
+	flex-wrap: wrap;
+	height: 600px;
+	background-color: green;
+}
+
+.d-none {
+	display: none;
+}
+
+.square {
+	aspect-ratio: 1/1;
+	border: 2px solid white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	cursor: pointer;
+}
+
+.square.easy {
+	width: calc(100% / 10);
+}
+
+.square.normal {
+	width: calc(100% / 9);
+}
+
+.square.hard {
+	width: calc(100% / 7);
+}
+
+.square.clicked {
+	background-color: blueviolet;
+	pointer-events: none;
+}
+
+.square.bomb {
+	background-color: red;
+}
+
+.disable-div {
+	pointer-events: none;
+	opacity: .6;
+}
